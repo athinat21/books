@@ -1,0 +1,10 @@
+Lidhja me databazen
+
+JPA->Java Persistance Api
+Standard per ruajtjen e objekteve ne nje databaze relacionale
+Hibernate eshte implementimi i JPA
+@Entity
+@Id
+@Column
+
+JpaRepository ->interface i gatshem me metoda per maanipulim te dhenash
