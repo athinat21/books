@@ -4,6 +4,7 @@ package com.example.Database.connection.repository;
 import com.example.Database.connection.model.entity.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.List;
 import java.util.Optional;
 
 //kjo eshte nje interface qe sherben sirepository per entitetin book
@@ -21,4 +22,10 @@ public interface BookRepository extends JpaRepository<Book, Long> {
 
     //findByName -> where name = ? ->variabli qe vendosim ne
     //findByPriceGreaterThan -> where price > ?
+
+    List<Book> findByYearPublishedGreaterThan(int year);
+
+
+
+
 }

@@ -42,4 +42,10 @@ public class BookController {
                 .orElse(ResponseEntity.notFound().build());
 
     }
+
+    //endpoint:  GET /books/after?year=2005
+    @GetMapping("/after")
+    public List<Book> getBooksAfterYear(@RequestParam int year){
+        return bookService.getBooksPublishedAfter(year);
+    }
 }
